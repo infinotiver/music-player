@@ -101,7 +101,8 @@ body {
     flex-wrap: wrap;
     transition: all 0.2s ease;
 }
-
+.home-grid .grid {
+}
 .home-grid .grid .img {
     height: 120px;
     width: 120px;
@@ -116,6 +117,9 @@ body {
 .home-grid .grid .track-title {
     margin: 4px;
     padding: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .home-grid .grid .track-artist {
@@ -123,6 +127,10 @@ body {
     padding: 2px;
     font-weight: 100;
     font-size: 0.8rem;
+    white-space: nowrap;
+    max-width:100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .music-player__bottom-bar {
