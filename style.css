@@ -62,7 +62,8 @@ body {
     border-radius: 8px;
     transition: 0.2s all;
     font-weight: 200;
-    border: 2px solid var(--secondary)
+    border: 2px solid var(--secondary);
+    justify-self: center;
 }
 
 .music-player__sidebar .list .list-item:hover {
@@ -74,8 +75,6 @@ body {
 .music-player__sidebar .list .list-header {
     font-weight: 400;
     margin-bottom: 4px;
-    align-self: left;
-    justify-content: center;
 }
 
 .music-player__content {
@@ -86,6 +85,7 @@ body {
     margin: 2px;
     padding: 4px;
     transition: all 0.2s ease;
+    overflow: scroll;
 }
 
 .content-title {
@@ -100,9 +100,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     transition: all 0.2s ease;
+    justify-content: flex-start;
 }
+
 .home-grid .grid {
+    width: 120px;
+    margin: 4px;
+    padding: 2px;
 }
+
 .home-grid .grid .img {
     height: 120px;
     width: 120px;
@@ -128,7 +134,6 @@ body {
     font-weight: 100;
     font-size: 0.8rem;
     white-space: nowrap;
-    max-width:100px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -140,7 +145,7 @@ body {
     align-self: stretch;
     padding: 10px 20px;
     background-color: var(--accent);
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 4px 0 0 0;
     display: flex;
     justify-content: space-between;
