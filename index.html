@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Player</title>
+    <title>Music Player</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
+        <link href="https://css.gg/css?=|play-track-next|play-pause|play-track-prev|" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <div class="music-player__sidebar">
             <div class="list">
                 <div class="list-header">
-                    Media Player
+                    Music Player
                 </div>
                 <div class="list-item">
                     <div class="list-header">
@@ -102,9 +102,15 @@
                     <p>Ed Sheeran</p>
                 </div>
                 <div class="playing-now-controls">
-                    <button id="no-loop">No loop</button><button id="previous-track">Prev.</button> <button
-                        id="play-pause-toggle">Toggle</button>
-                    <button id="next-track">Next</button> <button id="loop">Loop</button>
+                    <div class="control">
+                        <i class="gg-play-track-prev"></i>
+                    </div>
+                    <div class="main-control">
+                        <i class="gg-play-pause"></i>
+                    </div>
+                    <div class="control">
+                        <i class="gg-play-track-next"></i>
+                    </div>
                 </div>
             </div>
         </div>
