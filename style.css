@@ -20,6 +20,21 @@ body {
     transition: all 0.2s ease;
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--select)
+}
+
 .music-player {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -34,6 +49,7 @@ body {
     margin: 2%;
     border-radius: 8px;
     transition: all 0.2s ease;
+
 }
 
 .music-player__sidebar {
