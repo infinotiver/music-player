@@ -151,6 +151,7 @@ body {
 }
 
 .home-grid .grid .track-artist {
+    color: gray;
     margin: 4px;
     padding: 2px;
     font-weight: 100;
@@ -201,8 +202,17 @@ body {
     flex-direction: column;
 }
 
-.playing-now-title h3,
-p {
+.playing-now-title h3 {
+    white-space: nowrap;
+    flex-grow: 1;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 12px;
+}
+
+.playing-now-title p {
+    color: lightgray;
     white-space: nowrap;
     flex-grow: 1;
     max-width: 250px;
