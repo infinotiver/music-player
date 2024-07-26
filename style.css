@@ -3,7 +3,7 @@
     --background: #323333;
     --primary: #3a31d8;
     --secondary: #2d2d2d;
-    --accent: #2c2c2c;
+    --accent: #383838;
     --select: #393939
 }
 
@@ -80,6 +80,13 @@ body {
     border: 2px solid var(--secondary);
     justify-self: center;
     align-self: stretch;
+}
+
+.music-player__sidebar .list .divide {
+    padding: 4px 6px;
+    justify-self: center;
+    align-self: stretch;
+    border-top: 2px solid var(--accent);
 }
 
 .music-player__sidebar .list .list-item:hover {
