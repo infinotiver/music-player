@@ -18,6 +18,7 @@ body {
     color: var(--text);
     font-family: "Roboto", sans-serif;
     transition: all 0.2s ease;
+
 }
 
 ::-webkit-scrollbar {
@@ -39,7 +40,7 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
-
+    max-height: 90vh;
     margin: 0 auto;
     padding: 10px;
     border-radius: 4px;
@@ -115,7 +116,7 @@ body {
 }
 
 .content-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 8px 4px;
     margin: 4px;
     font-weight: 600;
@@ -124,6 +125,11 @@ body {
     top: -4px;
     z-index: 999;
     background-color: var(--background);
+}
+
+.music-player__content h4 {
+    margin: 4px;
+    padding: 4px;
 }
 
 .home-grid {
