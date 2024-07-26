@@ -21,12 +21,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 8px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    border-radius: 50%;
+    border-radius: 24px;
     background: var(--accent);
 }
 
