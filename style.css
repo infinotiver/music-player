@@ -205,8 +205,10 @@ p {
 
 .control {
     display: flex;
-    justify-content: center; /* Can be kept for horizontal centering */
-    align-items: center; /* Centers icons vertically */
+    justify-content: center;
+    /* Can be kept for horizontal centering */
+    align-items: center;
+    /* Centers icons vertically */
     padding: 6px;
     margin: 4px;
     width: 30px;
@@ -214,8 +216,9 @@ p {
     border-radius: 50%;
     background-color: var(--accent);
     transition: all 0.2s ease;
-    align-self: center; /* Not needed in this case */
-  }
+    align-self: center;
+    /* Not needed in this case */
+}
 
 .main-control {
     display: flex;
