@@ -294,9 +294,18 @@ body {
     border: 2px solid var(--primary);
     background-color: var(--primary);
     transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: bold;
 }
 
-.main-control:hover,
+.main-control:hover {
+    background-color: var(--select);
+    border-color: var(--primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 .control:hover {
     background-color: var(--select);
 }
