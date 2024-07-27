@@ -273,10 +273,10 @@ i {
     /* Can be kept for horizontal centering */
     align-items: center;
     /* Centers icons vertically */
-    padding: 6px;
+    padding: 8px;
     margin: 4px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: var(--accent);
     transition: all 0.2s ease;
@@ -299,7 +299,6 @@ i {
     color: white;
     font-weight: bold;
 }
-
 .main-control:hover {
     background-color: var(--select);
     border-color: var(--primary);
