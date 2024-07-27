@@ -154,6 +154,7 @@ i {
     padding: 2px;
     position: relative;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .home-grid .grid:hover {
@@ -166,7 +167,6 @@ i {
     width: 120px;
     margin: 4px;
     padding: 2px;
-    border: 2px solid var(--secondary);
     border-radius: 4px;
     background-color: var(--accent);
     transition: all 0.2s ease;
