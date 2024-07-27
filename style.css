@@ -146,39 +146,53 @@ i {
     display: flex;
     flex-wrap: wrap;
     transition: all 0.2s ease;
-    justify-content: flex-start;
 }
 
 .home-grid .grid {
+    display: flex;
+    flex-direction: column;
     width: 120px;
     margin: 4px;
     padding: 2px;
-    position: relative;
-    overflow: hidden;
     border-radius: 8px;
 }
 
 .home-grid .grid:hover {
     transform: scale(1.1);
     transition: all 0.2s ease;
+    background-color: var(--select)
 }
 
 .home-grid .grid .img {
-    height: 120px;
-    width: 120px;
+    align-self: center;
+    height: 100px;
+    width: 100px;
     margin: 4px;
-    padding: 2px;
+    padding: 4px;
     border-radius: 4px;
     background-color: var(--accent);
     transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-grid .grid .img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .home-grid .grid .track-title {
     margin: 4px;
     padding: 2px;
+    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .home-grid .grid .track-artist {
@@ -187,9 +201,9 @@ i {
     padding: 2px;
     font-weight: 100;
     font-size: 0.8rem;
+    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .music-player__bottom-bar {
@@ -300,6 +314,7 @@ i {
     color: white;
     font-weight: bold;
 }
+
 .main-control:hover {
     background-color: var(--select);
     border-color: var(--primary);
