@@ -22,6 +22,10 @@ body {
     overflow-x: hidden;
 }
 
+i {
+    font-size: 1.5rem;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -156,9 +160,6 @@ body {
     transform: scale(1.1);
     transition: all 0.2s ease;
 }
-
-
-
 
 .home-grid .grid .img {
     height: 120px;
@@ -310,6 +311,30 @@ body {
     background-color: var(--select);
 }
 
+.volume-control {
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: var(--background);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--secondary);
+}
+
+.volume-control .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volume-control .slider input {
+    width: 15vw;
+}
+
+#volume:hover .volume-control {
+    display: block;
+}
 
 @media screen and (max-width: 768px) {
     body {
