@@ -233,7 +233,7 @@ i {
 .playing_now .bar {
     grid-row: 1;
     grid-column: 1/6;
-    width: 50%;
+    width: 96%;
     height: 6px;
     background: var(--secondary);
     justify-self: center;
@@ -249,14 +249,13 @@ i {
     background: var(--primary)
 }
 
-
 .playing-now-thumbnail {
     grid-row: 2;
     grid-column: 1/2;
     background-color: gray;
     border-radius: 4px;
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
     align-self: center;
     justify-self: center;
 }
