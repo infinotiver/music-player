@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: #f8f8f8;
+    background-color: #3f75c6;
     color: var(--text);
     font-family: "Roboto", sans-serif;
     transition: all 0.2s ease;
@@ -240,14 +240,34 @@ i {
     justify-self: center;
     align-self: center;
     border-radius: 16px;
-    margin: 2px;
+    margin: 4px 2px;
 }
 
 .playing_now .bar .fill {
     width: 40%;
     height: 6px;
     border-radius: 8px;
-    background: var(--primary)
+    background: var(--primary);
+    position: relative;
+}
+
+.playing_now .bar .fill::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--primary);
+    transition: all 0.1s;
+}
+
+.playing_now .bar .fill:hover::after {
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
 }
 
 .playing-now-thumbnail {
@@ -272,7 +292,7 @@ i {
 .playing-now-title h3 {
     white-space: nowrap;
     flex-grow: 1;
-    max-width: 250px;
+    max-width: 300px;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-left: 12px;
@@ -314,7 +334,7 @@ i {
     margin: 4px;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 25%;
     background-color: var(--secondary);
     transition: all 0.2s ease;
     align-self: center;
@@ -326,10 +346,10 @@ i {
     justify-content: center;
     align-items: center;
     padding: 6px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    border: 2px solid var(--primary);
+    border: 2.6px solid var(--primary);
     background-color: var(--accent);
     transition: all 0.2s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
