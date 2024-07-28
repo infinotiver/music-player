@@ -92,6 +92,22 @@ i {
     align-self: stretch;
 }
 
+.music-player__sidebar .list .active {
+    background-color: var(--select);
+    position: relative;
+}
+.music-player__sidebar .list .active::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 40%;
+    border-radius: 16px;
+    background-color: var(--primary);
+}
+
 .music-player__sidebar .list .divide {
     padding: 4px 6px;
     justify-self: center;
