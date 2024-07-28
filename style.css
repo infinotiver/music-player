@@ -169,7 +169,7 @@ i {
     margin: 4px;
     padding: 4px;
     border-radius: 4px;
-    background-color: var(--accent);
+    background-color: gray;
     transition: all 0.2s ease;
     display: flex;
     justify-content: center;
@@ -253,7 +253,7 @@ i {
 .playing-now-thumbnail {
     grid-row: 2;
     grid-column: 1/2;
-    background-color: var(--background);
+    background-color: gray;
     border-radius: 4px;
     height: 90px;
     width: 90px;
