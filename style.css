@@ -269,20 +269,18 @@ i {
 .playing_now .bar .fill::after {
     content: "";
     position: absolute;
-    top: -4px;
+    top: -6px;
     right: -4px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
     background: var(--primary);
-    transition: all 0.1s;
+    transition: all 0.1s ease;
+    border: 2px solid var(--secondary)
 }
 
 .playing_now .bar .fill:hover::after {
-    top: -6px;
-    right: -6px;
-    width: 20px;
-    height: 20px;
+    border: 2px solid var(--accent)
 }
 
 .playing-now-thumbnail {
